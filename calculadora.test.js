@@ -1,4 +1,4 @@
-const { sumar, multiplicar } = require('./calculadora');
+const { sumar, multiplicar, dividir } = require('./calculadora');
 
 describe('Pruebas de la Calculadora', () => {
   test('sumar 2 + 3 debe devolver 5', () => {
@@ -10,4 +10,7 @@ describe('Pruebas de la Calculadora', () => {
   });
 
   // TODO (Estudiante): Agrega aquí los dos tests para dividir(a, b)
+  test('dividir 10 / 2 debe devolver 5', () => {
+    expect(dividir(10, 2)).toBe(5);
+  });
 });
