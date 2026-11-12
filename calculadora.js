@@ -7,7 +7,14 @@ function multiplicar(a, b) {
 }
 
 // TODO (Estudiante): Agrega aquí la función dividir(a, b) y expórtala abajo
+function dividir(a,b){
+  if(b === 0){
+    System.out.println("Error: división por cero");
+  }else{
+    return a / b;
+  }
+}
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { sumar, multiplicar };
+  module.exports = { sumar, multiplicar, dividir };
 }
